@@ -1,7 +1,12 @@
 {
-    "REPLACE_ME": {
-        "role": "arn:aws:iam:::REPLACE_ME:role/REPLACE_ME",
-        "region": "us-east-1",
-        "state_bucket":"REPLACE_ME"
+	# Replace below name to sample-vpc-environment-template"
+    "sample-vpc-environment-template": {
+		# copy paste the role generated in cloudformation arn:aws:iam::842814951080:role/ExampleGithubRole
+        "role": "arn:aws:iam::842814951080:role/ExampleGithubRole",
+        "region": "eu-west-1",
+		# Replace bucket name
+        "state_bucket":"aws-proton-terraform-sample-bucket-842814951080"
     }
 }
+
+# This will tell Terraform the role and region to use for deployments You can use different roles for each environment by adding them to this file.
